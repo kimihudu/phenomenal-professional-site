@@ -16,6 +16,7 @@
   .bg-gray-700  { background-color: #ede8dd !important; }
 
   /* Typography */
+  .text-white    { color: #1c1917 !important; }
   .text-gray-50  { color: #1c1917 !important; }
   .text-gray-100 { color: #292524 !important; }
   .text-gray-200 { color: #3c3835 !important; }
@@ -54,6 +55,7 @@
   .to-gray-800   { --tw-gradient-to: #f5f0e8 var(--tw-gradient-to-position) !important; }
 
   /* Nav backdrop / overlay */
+  .bg-gray-950\/90 { background-color: rgba(250, 249, 246, 0.92) !important; }
   .bg-gray-950\/95 { background-color: rgba(250, 249, 246, 0.95) !important; }
   .bg-gray-950\/98 { background-color: rgba(250, 249, 246, 0.98) !important; }
 
