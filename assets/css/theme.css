@@ -90,8 +90,8 @@ html { font-size: 17px; }
     border-color: rgba(180, 83, 9, 0.70) !important;
   }
   .hero-btn-services {
-    color: #1c1917 !important;
-    border-color: #78716c !important;
+    color: #000000 !important;
+    border-color: #a6a6a6 !important;
   }
 
   /* Hero amber glow: mute in light mode — looks odd over cream */
