@@ -58,9 +58,9 @@ const MANIFEST = {
 
   /* ── About page — Lisa portrait placeholder ──────────────────────────── */
   'about-portrait': {
-    id: 'photo-1467043153537-a4fba2cd39ef',
-    w: 600, h: 750,
-    alt: 'Tailor carefully working on a garment',
+    id: 'photo-1639380747026-1b77d233f635',
+    w: 776, h: 970,
+    alt: 'Lisa, lead artisan at Phenomenal Tailoring & Alteration',
     credit: 'Unsplash',
   },
   'about-story': {
