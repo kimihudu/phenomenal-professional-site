@@ -82,7 +82,7 @@ html { font-size: 17px; }
   .services-hero-desc      { color: #ffffff !important; }
 
   /* Hero description: override near-white text-gray-400 back to readable dark */
-  .hero-desc { color: #57534e !important; }
+  .hero-desc { color: #eeeeee !important; }
 
   /* Hero CTA buttons: ensure visibility on cream background */
   .hero-btn-phone {
