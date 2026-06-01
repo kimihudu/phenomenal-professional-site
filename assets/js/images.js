@@ -21,18 +21,18 @@ const MANIFEST = {
 
   /* ── Hero ─────────────────────────────────────────────────────────────── */
   'hero-bg': {
-    id: 'photo-1416339306562-f3d12fefd36f',
+    id: 'photo-1620799140188-3b2a02fd9a77',
     w: 1600, h: 900,
-    alt: 'Sewing machine and fabric in a tailor\'s workshop',
-    credit: 'Karly Santiago on Unsplash',
+    alt: 'Thread through a sewing machine needle in a tailor\'s workshop',
+    credit: 'Unsplash',
   },
 
   /* ── About page — Lisa portrait placeholder ──────────────────────────── */
   'about-portrait': {
-    id: 'photo-1594938298603-c8148c4b4c9c',
+    id: 'photo-1467043153537-a4fba2cd39ef',
     w: 600, h: 750,
-    alt: 'Seamstress carefully hand-stitching a garment',
-    credit: 'Theme Photos on Unsplash',
+    alt: 'Tailor carefully working on a garment',
+    credit: 'Unsplash',
   },
   'about-story': {
     id: 'photo-1441986300917-64674bd600d8',
@@ -43,30 +43,30 @@ const MANIFEST = {
 
   /* ── Gallery — Bridal ────────────────────────────────────────────────── */
   'gallery-bridal-1': {
-    id: 'photo-1519741497674-611481863552',
+    id: 'photo-1583939003579-730e3918a45a',
     w: 600, h: 600,
-    alt: 'Wedding gown hem alteration',
-    credit: 'Photos by Lanty on Unsplash',
+    alt: 'Bridal gown fitting session',
+    credit: 'Unsplash',
   },
   'gallery-bridal-2': {
-    id: 'photo-1596902852634-2cc9b2b8ee99',
+    id: 'photo-1595777457583-95e059d581b8',
     w: 600, h: 600,
-    alt: 'Bridal bustle detail',
-    credit: 'Asad Photo Maldives on Unsplash',
+    alt: 'Wedding gown detail and fabric',
+    credit: 'Unsplash',
   },
   'gallery-bridal-3': {
-    id: 'photo-1525258801814-0399f80b0b6a',
+    id: 'photo-1550399105-c4db5fb85c18',
     w: 600, h: 600,
-    alt: 'Bridesmaid fitting session',
-    credit: 'Jennifer Pallian on Unsplash',
+    alt: 'Bridal dress close-up detail',
+    credit: 'Unsplash',
   },
 
   /* ── Gallery — Suits ─────────────────────────────────────────────────── */
   'gallery-suits-1': {
-    id: 'photo-1507679799987-c73779587ccf',
+    id: 'photo-1535572290543-960a8046f5af',
     w: 600, h: 600,
-    alt: 'Tailored jacket being adjusted',
-    credit: 'Ruthson Zimmerman on Unsplash',
+    alt: 'Tailor fitting a suit jacket on a client',
+    credit: 'Unsplash',
   },
   'gallery-suits-2': {
     id: 'photo-1617127365659-c47fa864d8bc',
@@ -75,10 +75,10 @@ const MANIFEST = {
     credit: 'Terricks Noah on Unsplash',
   },
   'gallery-suits-3': {
-    id: 'photo-1490481651871-ab68de25d43d',
+    id: 'photo-1507679799987-c73779587ccf',
     w: 600, h: 600,
-    alt: 'Formal suit resize and fitting',
-    credit: 'Jennifer Burk on Unsplash',
+    alt: 'Tailored jacket adjustment',
+    credit: 'Ruthson Zimmerman on Unsplash',
   },
 
   /* ── Gallery — Dresses ───────────────────────────────────────────────── */
@@ -91,7 +91,7 @@ const MANIFEST = {
   'gallery-dresses-2': {
     id: 'photo-1512436991641-6745cdb1723f',
     w: 600, h: 600,
-    alt: 'Summer dress hem adjustment',
+    alt: 'Dress hem adjustment',
     credit: 'Dan Gold on Unsplash',
   },
   'gallery-dresses-3': {
@@ -103,9 +103,9 @@ const MANIFEST = {
 
   /* ── Gallery — Custom & Bespoke ─────────────────────────────────────── */
   'gallery-custom-1': {
-    id: 'photo-1541961017774-22349e4a1262',
+    id: 'photo-1547949003-9792a18a2601',
     w: 600, h: 600,
-    alt: 'Fabric selection and custom garment measuring',
+    alt: 'Industrial sewing machine for custom garments',
     credit: 'Unsplash',
   },
   'gallery-custom-2': {
@@ -123,22 +123,22 @@ const MANIFEST = {
 
   /* ── Gallery — Repairs ───────────────────────────────────────────────── */
   'gallery-repairs-1': {
-    id: 'photo-1545291730-faff8ca1d4b0',
+    id: 'photo-1558769132-cb1aea458c5e',
     w: 600, h: 600,
-    alt: 'Zipper replacement on a garment',
-    credit: 'NordWood Themes on Unsplash',
+    alt: 'Tailor work table with pins and fabric for repairs',
+    credit: 'Unsplash',
   },
   'gallery-repairs-2': {
-    id: 'photo-1509631179647-0177331693ae',
+    id: 'photo-1524234107056-1c1f48f64ab8',
     w: 600, h: 600,
-    alt: 'Seam restoration in progress',
-    credit: 'Annie Spratt on Unsplash',
+    alt: 'Needle and thread close-up — hand stitching repair',
+    credit: 'Unsplash',
   },
   'gallery-repairs-3': {
-    id: 'photo-1558618047-3c8c76ca7d13',
+    id: 'photo-1585386959984-a4155224a1ad',
     w: 600, h: 600,
-    alt: 'Vintage garment repair',
-    credit: 'Waldemar Brandt on Unsplash',
+    alt: 'Fabric swatches and textile details',
+    credit: 'Unsplash',
   },
 };
 
