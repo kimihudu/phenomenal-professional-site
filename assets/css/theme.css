@@ -35,11 +35,10 @@ html { font-size: 17px; }
   .text-white    { color: #1c1917 !important; }
   .text-gray-50  { color: #1c1917 !important; }
   .text-gray-100 { color: #292524 !important; }
-  .text-gray-200 { color: #3c3835 !important; }
-  .text-gray-300 { color: #44403c !important; }
-  .text-gray-400 { color: #57534e !important; }  /* darkened: was #78716c, too light on cream */
-  .text-gray-500 { color: #78716c !important; }
-  .text-gray-600 { color: #57534e !important; }
+  .text-gray-200 { color: #44403c !important; }
+  .text-gray-300 { color: #57534e !important; }
+  .text-gray-400 { color: #78716c !important; }
+  .text-gray-500 { color: #a8a29e !important; }
 
   /* Form input text */
   .text-gray-100 { color: #1c1917 !important; }
@@ -80,7 +79,7 @@ html { font-size: 17px; }
   [data-stock-img="services-hero"] { opacity: 0.65 !important; }
   /* Keep dark overlay (bg-black/55 is not overridden — stays dark). Force text white. */
   .services-hero-heading   { color: #ffffff !important; }
-  .services-hero-desc      { color: rgba(255,255,255,0.82) !important; }
+  .services-hero-desc      { color: #ffffff !important; }
 
   /* Hero amber glow: mute in light mode — looks odd over cream */
   .hero-glow { opacity: 0.3 !important; }
