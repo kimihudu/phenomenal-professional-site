@@ -21,9 +21,9 @@ const MANIFEST = {
 
   /* ── Hero ─────────────────────────────────────────────────────────────── */
   'hero-bg': {
-    id: 'photo-1620799140188-3b2a02fd9a77',
-    w: 1600, h: 900,
-    alt: 'Thread through a sewing machine needle in a tailor\'s workshop',
+    id: 'photo-1542044801-30d3e45ae49a',
+    w: 1740, h: 900,
+    alt: 'Professional tailor at work — Phenomenal Tailoring & Alteration',
     credit: 'Unsplash',
   },
 
