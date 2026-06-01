@@ -37,8 +37,8 @@ html { font-size: 17px; }
   .text-gray-100 { color: #292524 !important; }
   .text-gray-200 { color: #3c3835 !important; }
   .text-gray-300 { color: #44403c !important; }
-  .text-gray-400 { color: #78716c !important; }
-  .text-gray-500 { color: #a8a29e !important; }
+  .text-gray-400 { color: #57534e !important; }  /* darkened: was #78716c, too light on cream */
+  .text-gray-500 { color: #78716c !important; }
   .text-gray-600 { color: #57534e !important; }
 
   /* Form input text */
@@ -46,6 +46,7 @@ html { font-size: 17px; }
   .placeholder-gray-500::placeholder { color: #a8a29e !important; }
 
   /* Borders */
+  .border-gray-300 { border-color: #78716c !important; }  /* outline buttons visible on cream */
   .border-gray-700 { border-color: #d6d3d1 !important; }
   .border-gray-800 { border-color: #e7e5e4 !important; }
   .border-gray-900 { border-color: #f5f5f4 !important; }
