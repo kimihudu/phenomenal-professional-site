@@ -84,6 +84,9 @@ html { font-size: 17px; }
   /* Gallery filter pills active state */
   .bg-amber-400.text-gray-900 { background-color: #b45309 !important; color: #ffffff !important; }
 
+  /* Hero trust chips */
+  .bg-gray-900\/50 { background-color: rgba(255,255,255,0.6) !important; }
+
   /* Hamburger bars */
   #menu-btn span { background-color: #1c1917 !important; }
 }
