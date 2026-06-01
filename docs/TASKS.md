@@ -64,3 +64,36 @@
 - [x] **T8.2** Create `sitemap.xml`
 - [x] **T8.3** Add custom `404.html` page (dark themed, gold CTA back to home)
 - [x] **T8.4** Add/update meta descriptions and `robots` tags on all 5 HTML pages
+
+## Wave 9 — Stock Image Loader
+
+> Goal: replace all placeholder/blank image slots with curated free stock photos
+> loaded dynamically via a lightweight JS module (`assets/js/images.js`).
+> No build step — pure ES module, tree-shaken inline on each page.
+
+- [ ] **T9.1** Design `images.js` — define image manifest (JSON map of `section → { url, alt, credit }`)
+  - Sections: `hero`, `hero-bg`, `services-alteration`, `services-bridal`, `services-suit`,
+    `services-dress`, `services-repair`, `gallery-1…12`, `about-story`, `about-team`
+  - Source: [Unsplash Source API](https://source.unsplash.com/) — no API key needed, CDN-hosted
+  - Fallback: local `assets/images/placeholder.jpg` if network fails (`onerror` handler)
+
+- [ ] **T9.2** Implement lazy-load injector
+  - Query all `[data-stock-img]` attributes on page load
+  - Set `src` + `alt` from manifest, add `loading="lazy"` and `decoding="async"`
+  - Apply smooth fade-in on load via CSS transition (`opacity: 0 → 1`)
+
+- [ ] **T9.3** Tag all image slots across 5 pages with `data-stock-img="<key>"` attribute
+  - `index.html` — hero background, services preview cards (4), CTA banner
+  - `services.html` — service category hero, 6 service illustration thumbnails
+  - `gallery.html` — 12 gallery tiles (replace coloured placeholders)
+  - `about.html` — story image, Lisa team photo placeholder
+  - `contact.html` — top hero banner
+
+- [ ] **T9.4** Add Unsplash attribution block (required by Unsplash license)
+  - Render small `Photo by [name] on Unsplash` credit in image `title` attribute
+  - Optionally render credits in footer or a hidden `#credits` section
+
+- [ ] **T9.5** Test & QA
+  - Verify all images load at 375px / 768px / 1280px
+  - Test offline fallback (DevTools → offline mode)
+  - Confirm no layout shift (set explicit `width`/`height` or `aspect-ratio` on all img slots)
