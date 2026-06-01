@@ -21,10 +21,10 @@ const MANIFEST = {
 
   /* ── Hero ─────────────────────────────────────────────────────────────── */
   'hero-bg': {
-    id: 'photo-1558618666-fcd25c85cd64',
+    id: 'photo-1416339306562-f3d12fefd36f',
     w: 1600, h: 900,
-    alt: 'Elegant bridal gown on a dress form in a tailoring studio',
-    credit: 'Zulmaury Saavedra on Unsplash',
+    alt: 'Sewing machine and fabric in a tailor\'s workshop',
+    credit: 'Karly Santiago on Unsplash',
   },
 
   /* ── About page — Lisa portrait placeholder ──────────────────────────── */
