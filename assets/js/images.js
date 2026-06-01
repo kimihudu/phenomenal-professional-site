@@ -29,9 +29,9 @@ const MANIFEST = {
 
   /* ── Services page hero ──────────────────────────────────────────────── */
   'services-hero': {
-    id: 'photo-1574180566232-aaad1b5b8450',
-    w: 1600, h: 700,
-    alt: 'Close-up of a vintage sewing machine in a professional tailor studio',
+    id: 'photo-1497997092403-f091fcf5b6c4',
+    w: 1740, h: 700,
+    alt: 'Sewing machine close-up in a tailor studio — Our Services hero',
     credit: 'Unsplash',
   },
 
