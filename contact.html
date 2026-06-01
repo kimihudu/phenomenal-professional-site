@@ -128,10 +128,10 @@
       <div class="contact-hero-overlay absolute inset-0 bg-black/55"></div>
       <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/80 to-transparent"></div>
       <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400">GET IN TOUCH</p>
-        <h1 class="contact-hero-heading mt-4 font-serif text-fluid-hero text-gray-50 text-balance" data-animate="fadeInUp">Let's Talk About Your Garment</h1>
-        <p class="hero-desc mt-6 text-gray-400 text-lg max-w-2xl mx-auto">Ready for the perfect fit? Contact us for alterations, repairs, or to schedule a fitting with Lisa.</p>
-        <span class="mt-4 inline-flex items-center gap-2 rounded-full border-2 border-amber-400 bg-amber-400 px-5 py-2.5 text-sm font-bold text-gray-900 shadow-lg shadow-amber-400/40 tracking-wide">⚡ Same Day Service Available</span>
+        <p data-content="hero.label" class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400">GET IN TOUCH</p>
+        <h1 data-content="hero.title" class="contact-hero-heading mt-4 font-serif text-fluid-hero text-gray-50 text-balance" data-animate="fadeInUp">Let's Talk About Your Garment</h1>
+        <p data-content="hero.desc" class="hero-desc mt-6 text-gray-400 text-lg max-w-2xl mx-auto">Ready for the perfect fit? Contact us for alterations, repairs, or to schedule a fitting with Lisa.</p>
+        <span data-content="hero.badge" class="mt-4 inline-flex items-center gap-2 rounded-full border-2 border-amber-400 bg-amber-400 px-5 py-2.5 text-sm font-bold text-gray-900 shadow-lg shadow-amber-400/40 tracking-wide">⚡ Same Day Service Available</span>
       </div>
     </section>
 
@@ -139,7 +139,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-start">
           <div>
-            <h2 class="font-serif text-2xl text-gray-50 mb-8" data-animate="fadeInUp">Send Us a Message</h2>
+            <h2 data-content="form.title" class="font-serif text-2xl text-gray-50 mb-8" data-animate="fadeInUp">Send Us a Message</h2>
             <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
               <!-- TODO T6.3: Replace YOUR_FORM_ID with real Formspree endpoint for info@phenomenalalteration.com -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -176,8 +176,8 @@
           </div>
 
           <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 sticky top-24">
-            <div class="bg-amber-400/10 text-amber-400 border border-amber-400/30 rounded-xl px-4 py-3 text-sm font-semibold text-center mb-6">⚡ Same Day Service Available</div>
-            <h3 class="font-serif text-xl text-gray-50 mb-6">Visit Us</h3>
+            <div data-content="sidebar.badge" class="bg-amber-400/10 text-amber-400 border border-amber-400/30 rounded-xl px-4 py-3 text-sm font-semibold text-center mb-6">⚡ Same Day Service Available</div>
+            <h3 data-content="sidebar.title" class="font-serif text-xl text-gray-50 mb-6">Visit Us</h3>
             <div class="space-y-5">
               <div class="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -197,14 +197,14 @@
               <div class="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
                 <div>
-                  <p class="text-gray-300 text-sm">Mon–Sat: 9:00am – 6:00pm</p>
-                  <p class="text-xs text-gray-500">Please call to confirm</p>
+                  <p data-content="sidebar.hours" class="text-gray-300 text-sm">Mon–Sat: 9:00am – 6:00pm</p>
+                  <p data-content="sidebar.hoursNote" class="text-xs text-gray-500">Please call to confirm</p>
                 </div>
               </div>
             </div>
             <hr class="border-gray-800 my-6">
             <div>
-              <p class="text-xs text-gray-500 uppercase tracking-widest mb-3">Follow Us</p>
+              <p data-content="sidebar.follow" class="text-xs text-gray-500 uppercase tracking-widest mb-3">Follow Us</p>
               <div class="flex gap-3">
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="text-gray-400 hover:text-amber-400 transition-colors" aria-label="Facebook">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -215,7 +215,7 @@
               </div>
             </div>
             <hr class="border-gray-800 my-6">
-            <p class="text-xs text-gray-500 italic">Walk-ins welcome! No appointment needed for most alterations.</p>
+            <p data-content="sidebar.walkins" class="text-xs text-gray-500 italic">Walk-ins welcome! No appointment needed for most alterations.</p>
           </div>
         </div>
       </div>
@@ -223,8 +223,8 @@
 
     <section class="bg-gray-900 py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <h2 class="font-serif text-fluid-h2 text-gray-50 text-balance" data-animate="fadeInUp">Find Us in Georgetown</h2>
-        <p class="text-base font-semibold text-gray-200 mt-2 mb-8">280 Guelph St, Unit 19, Georgetown, Ontario L7G 4B1</p>
+        <h2 data-content="map.title" class="font-serif text-fluid-h2 text-gray-50 text-balance" data-animate="fadeInUp">Find Us in Georgetown</h2>
+        <p data-content="map.address" class="text-base font-semibold text-gray-200 mt-2 mb-8">280 Guelph St, Unit 19, Georgetown, Ontario L7G 4B1</p>
         <div class="rounded-2xl overflow-hidden border border-gray-800 max-w-3xl mx-auto shadow-xl">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.9645941482695!2d-79.90080112382341!3d43.64890497110239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b12b54a9036b1%3A0xea6799bf84ad2ddf!2s280%20Guelph%20St%20Unit%2019%2C%20Georgetown%2C%20ON%20L7G%204B1!5e0!3m2!1sen!2sca!4v1780278142849!5m2!1sen!2sca"
@@ -312,5 +312,6 @@
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/animate.js"></script>
   <script src="assets/js/theme.js"></script>
+  <script src="assets/js/content-loader.js"></script>
 </body>
 </html>
