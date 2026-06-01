@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Phenomenal Tailoring &amp; Alteration</title>
+  <meta name="description" content="Contact Phenomenal Tailoring &amp; Alteration. Visit us at 280 Guelph St, Unit 19, Georgetown, ON or call 905-877-6747. Walk-ins welcome.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/og/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          fontSize: {
+            'fluid-hero': ['clamp(2rem, 8vw, 4.5rem)', { lineHeight: '1.1' }],
+            'fluid-h2':   ['clamp(1.5rem, 5vw, 3rem)',  { lineHeight: '1.2' }],
+          },
+          colors: {
+            brand: {
+              gold: '#fbbf24',
+              'gold-light': '#fcd34d',
+              'gold-dark': '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — Phenomenal Tailoring &amp; Alteration">
+  <meta property="og:description" content="Book your tailoring appointment. 280 Guelph St Unit 19, Georgetown, Ontario. Same day service available.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kimihudu.github.io/phenomenal-professional-site/contact.html">
+  <meta property="og:image" content="https://kimihudu.github.io/phenomenal-professional-site/assets/images/og/og-cover.jpg">
+  <link rel="canonical" href="https://kimihudu.github.io/phenomenal-professional-site/contact.html">
+  <style>
+    #menu-btn.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    #menu-btn.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    #menu-btn.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    [data-animate].animate-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-300 font-sans antialiased overflow-x-hidden">
+
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-950/90 border-b border-gray-800">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16" aria-label="Main navigation">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 font-serif text-xl font-bold">
+        <span class="text-gray-50">Phenomenal</span>
+        <span class="text-amber-400">Tailoring</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Home</a>
+        <a href="services.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Services</a>
+        <a href="gallery.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Gallery</a>
+        <a href="about.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">About</a>
+        <a href="contact.html" class="text-sm text-amber-400 hover:text-amber-400 transition-colors">Contact</a>
+        <a href="contact.html" class="bg-amber-400 text-gray-900 text-sm font-semibold px-5 py-2 rounded-full hover:bg-amber-300 transition-colors">Book Now</a>
+      </div>
+
+      <!-- Hamburger button (mobile only) -->
+      <button id="menu-btn" class="md:hidden relative w-12 h-12 flex flex-col justify-center items-center gap-[5px]" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="w-6 h-0.5 bg-gray-300 transition-all duration-300 origin-center block"></span>
+        <span class="w-6 h-0.5 bg-gray-300 transition-all duration-300 block"></span>
+        <span class="w-6 h-0.5 bg-gray-300 transition-all duration-300 origin-center block"></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- Mobile full-screen overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 bg-gray-950/98 backdrop-blur-md flex flex-col items-center justify-center gap-8 hidden transition-opacity duration-300" aria-hidden="true">
+    <a href="index.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Home</a>
+    <a href="services.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Services</a>
+    <a href="gallery.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Gallery</a>
+    <a href="about.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">About</a>
+    <a href="contact.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Contact</a>
+    <a href="contact.html" class="mt-4 bg-amber-400 text-gray-900 font-semibold text-xl px-10 py-4 rounded-full hover:bg-amber-300 transition-colors mobile-nav-link">Book Now</a>
+  </div>
+
+  <main>
+    <section class="py-24 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-center">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400">GET IN TOUCH</p>
+        <h1 class="mt-4 font-serif text-fluid-hero text-gray-50 text-balance" data-animate="fadeInUp">Let's Talk About Your Garment</h1>
+        <p class="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">Ready for the perfect fit? Contact us for alterations, repairs, or to schedule a fitting with Lisa.</p>
+        <span class="inline-block bg-amber-400/10 text-amber-400 border border-amber-400/30 rounded-full px-4 py-1.5 text-sm font-medium mt-4">⚡ Same Day Service Available</span>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-start">
+          <div>
+            <h2 class="font-serif text-2xl text-gray-50 mb-8" data-animate="fadeInUp">Send Us a Message</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+              <!-- TODO T6.3: Replace YOUR_FORM_ID with real Formspree endpoint for info@phenomenalalteration.com -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-xs text-gray-400 font-medium uppercase tracking-wide mb-2">Name</label>
+                  <input id="name" type="text" name="name" required placeholder="Your name" class="w-full text-base bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 placeholder-gray-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 transition-colors">
+                </div>
+                <div>
+                  <label for="email" class="block text-xs text-gray-400 font-medium uppercase tracking-wide mb-2">Email</label>
+                  <input id="email" type="email" name="email" required placeholder="you@example.com" class="w-full text-base bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 placeholder-gray-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 transition-colors">
+                </div>
+              </div>
+              <div>
+                <label for="phone" class="block text-xs text-gray-400 font-medium uppercase tracking-wide mb-2">Phone</label>
+                <input id="phone" type="tel" name="phone" placeholder="(905) 000-0000" class="w-full text-base bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 placeholder-gray-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 transition-colors">
+              </div>
+              <div>
+                <label for="service" class="block text-xs text-gray-400 font-medium uppercase tracking-wide mb-2">Service</label>
+                <select id="service" name="service" required class="w-full text-base bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 placeholder-gray-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 transition-colors">
+                  <option value="" selected disabled>Select a service</option>
+                  <option value="Bridal &amp; Wedding Alterations">Bridal &amp; Wedding Alterations</option>
+                  <option value="Suit &amp; Formal Wear">Suit &amp; Formal Wear</option>
+                  <option value="Dress Alterations">Dress Alterations</option>
+                  <option value="Repairs &amp; Restoration">Repairs &amp; Restoration</option>
+                  <option value="Other / Not Sure">Other / Not Sure</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="block text-xs text-gray-400 font-medium uppercase tracking-wide mb-2">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your garment..." class="w-full text-base bg-gray-900 border border-gray-700 rounded-xl px-4 py-3 text-gray-100 placeholder-gray-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/30 transition-colors"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-amber-400 text-gray-900 font-semibold py-4 rounded-xl hover:bg-amber-300 transition-colors text-base">Send Message →</button>
+            </form>
+          </div>
+
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 sticky top-24">
+            <div class="bg-amber-400/10 text-amber-400 border border-amber-400/30 rounded-xl px-4 py-3 text-sm font-semibold text-center mb-6">⚡ Same Day Service Available</div>
+            <h3 class="font-serif text-xl text-gray-50 mb-6">Visit Us</h3>
+            <div class="space-y-5">
+              <div class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <p class="text-gray-300 text-sm">280 Guelph St, Unit 19<br>Georgetown, Ontario L7G 4B1</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <div class="space-y-2 text-sm text-gray-300">
+                  <p><a href="tel:9058776747" class="hover:text-amber-400 transition-colors">905-877-6747</a> <span class="text-gray-500">(Main)</span></p>
+                  <p><a href="tel:6475026193" class="hover:text-amber-400 transition-colors">647-502-6193</a> <span class="text-gray-500">(Mobile)</span></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <a href="mailto:info@phenomenalalteration.com" class="text-gray-300 hover:text-amber-400 transition-colors text-sm break-all">info@phenomenalalteration.com</a>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                <div>
+                  <p class="text-gray-300 text-sm">Mon–Sat: 9:00am – 6:00pm</p>
+                  <p class="text-xs text-gray-500">Please call to confirm</p>
+                </div>
+              </div>
+            </div>
+            <hr class="border-gray-800 my-6">
+            <div>
+              <p class="text-xs text-gray-500 uppercase tracking-widest mb-3">Follow Us</p>
+              <div class="flex gap-3">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="text-gray-400 hover:text-amber-400 transition-colors" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="text-gray-400 hover:text-amber-400 transition-colors" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+              </div>
+            </div>
+            <hr class="border-gray-800 my-6">
+            <p class="text-xs text-gray-500 italic">Walk-ins welcome! No appointment needed for most alterations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <h2 class="font-serif text-fluid-h2 text-gray-50 text-balance" data-animate="fadeInUp">Find Us in Georgetown</h2>
+        <p class="text-gray-400 text-sm mt-2 mb-8">280 Guelph St, Unit 19, Georgetown, Ontario L7G 4B1</p>
+        <div class="bg-gray-950 rounded-2xl border border-gray-800 h-64 max-w-3xl mx-auto flex flex-col items-center justify-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-12 h-12 text-amber-400/40"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span class="text-gray-600 text-sm">Interactive map coming soon</span>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=280+Guelph+St+Unit+19+Georgetown+Ontario+L7G+4B1" target="_blank" rel="noopener" class="text-amber-400 text-sm hover:text-amber-300 underline">Open in Google Maps →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 border-t border-gray-800 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        <!-- Column 1: Brand -->
+        <div>
+          <a href="index.html" class="font-serif text-xl font-bold">
+            <span class="text-gray-50">Phenomenal</span>
+            <span class="text-amber-400"> Tailoring</span>
+          </a>
+          <p class="mt-3 text-gray-400 text-sm leading-relaxed">Precision alterations &amp; bespoke tailoring by artisan Lisa in Georgetown, Ontario.</p>
+          <div class="mt-4 flex items-center gap-4">
+            <!-- Facebook icon placeholder -->
+            <a href="#" class="text-gray-500 hover:text-amber-400 transition-colors" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <!-- Instagram icon placeholder -->
+            <a href="#" class="text-gray-500 hover:text-amber-400 transition-colors" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400 mb-5">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Home</a></li>
+            <li><a href="services.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Services</a></li>
+            <li><a href="gallery.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Gallery</a></li>
+            <li><a href="about.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">About</a></li>
+            <li><a href="contact.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3: Contact -->
+        <div>
+          <h3 class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400 mb-5">Contact</h3>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              280 Guelph St, Unit 19<br>Georgetown, ON L7G 4B1
+            </li>
+            <li>
+              <a href="tel:9058776747" class="hover:text-amber-400 transition-colors">905-877-6747</a>
+            </li>
+            <li>
+              <a href="tel:6475026193" class="hover:text-amber-400 transition-colors">647-502-6193 (Mobile)</a>
+            </li>
+            <li>
+              <a href="mailto:info@phenomenalalteration.com" class="hover:text-amber-400 transition-colors">info@phenomenalalteration.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Bottom bar -->
+      <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>&copy; 2024 Phenomenal Tailoring &amp; Alteration. All rights reserved.</p>
+        <p>Powered by craftsmanship &amp; precision. Georgetown, Ontario.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animate.js"></script>
+</body>
+</html>

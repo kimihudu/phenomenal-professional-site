@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Phenomenal Tailoring &amp; Alteration</title>
+  <meta name="description" content="Meet Lisa, lead artisan at Phenomenal Tailoring &amp; Alteration in Georgetown, Ontario. Expert alterations with same day service and over a decade of experience.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/og/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          fontSize: {
+            'fluid-hero': ['clamp(2rem, 8vw, 4.5rem)', { lineHeight: '1.1' }],
+            'fluid-h2':   ['clamp(1.5rem, 5vw, 3rem)',  { lineHeight: '1.2' }],
+          },
+          colors: {
+            brand: {
+              gold: '#fbbf24',
+              'gold-light': '#fcd34d',
+              'gold-dark': '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About — Phenomenal Tailoring &amp; Alteration">
+  <meta property="og:description" content="Meet Lisa, lead artisan at Phenomenal Tailoring in Georgetown, Ontario. Precision and passion in every stitch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kimihudu.github.io/phenomenal-professional-site/about.html">
+  <meta property="og:image" content="https://kimihudu.github.io/phenomenal-professional-site/assets/images/og/og-cover.jpg">
+  <link rel="canonical" href="https://kimihudu.github.io/phenomenal-professional-site/about.html">
+  <style>
+    #menu-btn.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    #menu-btn.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    #menu-btn.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    [data-animate].animate-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-300 font-sans antialiased overflow-x-hidden">
+
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-950/90 border-b border-gray-800">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16" aria-label="Main navigation">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 font-serif text-xl font-bold">
+        <span class="text-gray-50">Phenomenal</span>
+        <span class="text-amber-400">Tailoring</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Home</a>
+        <a href="services.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Services</a>
+        <a href="gallery.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Gallery</a>
+        <a href="about.html" class="text-sm text-amber-400 hover:text-amber-400 transition-colors">About</a>
+        <a href="contact.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Contact</a>
+        <a href="contact.html" class="bg-amber-400 text-gray-900 text-sm font-semibold px-5 py-2 rounded-full hover:bg-amber-300 transition-colors">Book Now</a>
+      </div>
+
+      <!-- Hamburger button (mobile only) -->
+      <button id="menu-btn" class="md:hidden relative w-12 h-12 flex flex-col justify-center items-center gap-[5px]" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="w-6 h-0.5 bg-gray-300 transition-all duration-300 origin-center block"></span>
+        <span class="w-6 h-0.5 bg-gray-300 transition-all duration-300 block"></span>
+        <span class="w-6 h-0.5 bg-gray-300 transition-all duration-300 origin-center block"></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- Mobile full-screen overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 bg-gray-950/98 backdrop-blur-md flex flex-col items-center justify-center gap-8 hidden transition-opacity duration-300" aria-hidden="true">
+    <a href="index.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Home</a>
+    <a href="services.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Services</a>
+    <a href="gallery.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Gallery</a>
+    <a href="about.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">About</a>
+    <a href="contact.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Contact</a>
+    <a href="contact.html" class="mt-4 bg-amber-400 text-gray-900 font-semibold text-xl px-10 py-4 rounded-full hover:bg-amber-300 transition-colors mobile-nav-link">Book Now</a>
+  </div>
+
+  <main>
+    <section class="py-24 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400">OUR STORY</p>
+        <h1 data-animate="fadeInUp" class="mt-6 font-serif text-fluid-hero text-balance text-gray-50">About Phenomenal Tailoring</h1>
+        <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-400 leading-relaxed">Founded on a passion for precision, we've been transforming garments and boosting confidence in Georgetown, Ontario.</p>
+      </div>
+    </section>
+
+    <section class="bg-gray-950 py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-animate="fadeInUp" class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400">THE CRAFT</p>
+            <h2 data-animate="fadeInUp" class="mt-4 font-serif text-fluid-h2 text-balance text-gray-50">Where Precision Meets Passion</h2>
+            <div class="mt-8 space-y-6 text-base leading-relaxed text-gray-300">
+              <p>At Phenomenal Tailoring &amp; Alteration, we believe clothing should fit the individual — not the other way around. Every garment tells a story, and our job is to make sure it tells yours perfectly.</p>
+              <p>Lead artisan Lisa brings years of expertise to every project. Whether it's a delicate wedding gown, a tailored business suit, or a beloved vintage dress, each piece receives the same dedication to craft and precision.</p>
+              <p>We're located in the heart of Georgetown, Ontario, and proud to serve our community with same-day service when you need it most.</p>
+            </div>
+            <div class="mt-8 pl-6 border-l-4 border-amber-400">
+              <blockquote class="font-serif italic text-xl text-balance text-gray-50">Clothing should fit the individual — not the other way around.</blockquote>
+              <cite class="mt-2 block text-sm text-amber-400 not-italic">— Lisa, Lead Artisan</cite>
+            </div>
+          </div>
+
+          <div>
+            <div class="relative mx-auto flex aspect-[4/5] max-w-sm flex-col justify-between overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 p-8">
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <span class="font-serif text-7xl sm:text-8xl text-amber-400/20 text-center select-none">Phenomenal</span>
+              </div>
+              <div class="relative flex justify-end">
+                <span class="inline-flex items-center rounded-full border border-amber-400/40 bg-amber-400/10 px-4 py-2 text-sm text-amber-400">📍 Georgetown, Ontario</span>
+              </div>
+              <div class="relative flex flex-1 items-center justify-center">
+                <svg class="w-32 h-32 text-amber-400/70" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                  <path d="M27 27c22 13 44 28 66 66" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 7"/>
+                  <path d="M31 22l15 15-9 9-15-15 9-9z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                  <circle cx="87" cy="87" r="9" stroke="currentColor" stroke-width="2.5"/>
+                </svg>
+              </div>
+              <p class="relative text-center text-sm text-gray-400">Lisa — Lead Artisan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400">OUR VALUES</p>
+          <h2 data-animate="fadeInUp" class="mt-4 font-serif text-fluid-h2 text-balance text-gray-50">What Drives Every Stitch</h2>
+        </div>
+
+        <div data-animate="fadeInUp" class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+          <article class="rounded-2xl border border-gray-800 bg-gray-950 p-8 transition-all hover:border-amber-400/30 [touch-action:manipulation]">
+            <svg class="mb-4 h-12 w-12 text-amber-400" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="24" cy="24" r="5" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 6v6M24 36v6M6 24h6M36 24h6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <h3 class="font-serif text-2xl text-gray-50">Precision</h3>
+            <p class="mt-3 text-gray-400 leading-relaxed">Every measurement, every seam, every hem — done right the first time.</p>
+          </article>
+          <article class="rounded-2xl border border-gray-800 bg-gray-950 p-8 transition-all hover:border-amber-400/30 [touch-action:manipulation]">
+            <svg class="mb-4 h-12 w-12 text-amber-400" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M13 24l8 8 14-14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 13h10l4 4h14v18H10V13z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="font-serif text-2xl text-gray-50">Trust</h3>
+            <p class="mt-3 text-gray-400 leading-relaxed">We treat every garment as if it were our own. Your trust is our highest priority.</p>
+          </article>
+          <article class="rounded-2xl border border-gray-800 bg-gray-950 p-8 transition-all hover:border-amber-400/30 [touch-action:manipulation]">
+            <svg class="mb-4 h-12 w-12 text-amber-400" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 8c2 6 8 9 8 16a8 8 0 11-16 0c0-4 2-7 4-10 1.5-2.3 2.8-4.6 4-6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M24 24c2 2 3 4 3 6a3 3 0 11-6 0c0-1.7.8-3.4 3-6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="font-serif text-2xl text-gray-50">Passion</h3>
+            <p class="mt-3 text-gray-400 leading-relaxed">Tailoring isn't just our work — it's our art. We love what we do, and it shows.</p>
+          </article>
+        </div>
+
+        <div class="mt-20 text-center">
+          <p class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400">THE TEAM</p>
+          <h2 data-animate="fadeInUp" class="mt-4 font-serif text-fluid-h2 text-balance text-gray-50">Meet Lisa</h2>
+          <article class="mx-auto mt-10 max-w-sm rounded-2xl border border-amber-400/20 bg-gray-950 p-8 text-center">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full border-2 border-amber-400 bg-gray-800">
+              <span class="font-serif text-3xl text-amber-400">L</span>
+            </div>
+            <h3 class="mt-4 font-serif text-2xl text-gray-50">Lisa</h3>
+            <p class="mt-2 text-sm tracking-wide text-amber-400">Lead Artisan &amp; Owner</p>
+            <p class="mt-3 text-sm leading-relaxed text-gray-400">With years of expertise and an eye for detail, Lisa has built Phenomenal Tailoring into Georgetown's trusted destination for precision alterations.</p>
+          </article>
+        </div>
+
+        <div data-animate="fadeInUp" class="mt-16 grid grid-cols-2 gap-6 text-center md:grid-cols-4">
+          <div class="rounded-2xl border border-gray-800 bg-gray-900 p-6">
+            <p class="font-serif text-3xl text-amber-400">Same Day</p>
+            <p class="mt-2 text-xs uppercase tracking-widest text-gray-400">Service Available</p>
+          </div>
+          <div class="rounded-2xl border border-gray-800 bg-gray-900 p-6">
+            <p class="font-serif text-3xl text-amber-400">500+</p>
+            <p class="mt-2 text-xs uppercase tracking-widest text-gray-400">Happy Clients</p>
+          </div>
+          <div class="rounded-2xl border border-gray-800 bg-gray-900 p-6">
+            <p class="font-serif text-3xl text-amber-400">10+</p>
+            <p class="mt-2 text-xs uppercase tracking-widest text-gray-400">Years Experience</p>
+          </div>
+          <div class="rounded-2xl border border-gray-800 bg-gray-900 p-6">
+            <p class="font-serif text-2xl text-amber-400">Georgetown</p>
+            <p class="mt-2 text-xs uppercase tracking-widest text-gray-400">Ontario, Canada</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-950 py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 data-animate="fadeInUp" class="font-serif text-fluid-h2 text-balance text-gray-50">Let's Make It Fit Perfectly</h2>
+        <p class="mx-auto mt-6 max-w-2xl text-lg text-gray-400 leading-relaxed">Whether it's a small repair or a complete alteration — Lisa is here to help.</p>
+        <a href="contact.html" class="mt-8 inline-flex items-center justify-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-gray-900 transition-colors hover:bg-amber-300">Book Your Fitting</a>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm sm:text-base">
+          <a href="tel:9058776747" class="text-amber-400 transition-colors hover:text-amber-300">905-877-6747</a>
+          <span class="text-gray-500">·</span>
+          <a href="tel:6475026193" class="text-amber-400 transition-colors hover:text-amber-300">647-502-6193</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 border-t border-gray-800 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        <!-- Column 1: Brand -->
+        <div>
+          <a href="index.html" class="font-serif text-xl font-bold">
+            <span class="text-gray-50">Phenomenal</span>
+            <span class="text-amber-400"> Tailoring</span>
+          </a>
+          <p class="mt-3 text-gray-400 text-sm leading-relaxed">Precision alterations &amp; bespoke tailoring by artisan Lisa in Georgetown, Ontario.</p>
+          <div class="mt-4 flex items-center gap-4">
+            <!-- Facebook icon placeholder -->
+            <a href="#" class="text-gray-500 hover:text-amber-400 transition-colors" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <!-- Instagram icon placeholder -->
+            <a href="#" class="text-gray-500 hover:text-amber-400 transition-colors" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400 mb-5">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Home</a></li>
+            <li><a href="services.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Services</a></li>
+            <li><a href="gallery.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Gallery</a></li>
+            <li><a href="about.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">About</a></li>
+            <li><a href="contact.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3: Contact -->
+        <div>
+          <h3 class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400 mb-5">Contact</h3>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              280 Guelph St, Unit 19<br>Georgetown, ON L7G 4B1
+            </li>
+            <li>
+              <a href="tel:9058776747" class="hover:text-amber-400 transition-colors">905-877-6747</a>
+            </li>
+            <li>
+              <a href="tel:6475026193" class="hover:text-amber-400 transition-colors">647-502-6193 (Mobile)</a>
+            </li>
+            <li>
+              <a href="mailto:info@phenomenalalteration.com" class="hover:text-amber-400 transition-colors">info@phenomenalalteration.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Bottom bar -->
+      <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>&copy; 2024 Phenomenal Tailoring &amp; Alteration. All rights reserved.</p>
+        <p>Powered by craftsmanship &amp; precision. Georgetown, Ontario.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animate.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kimihudu.github.io/phenomenal-professional-site/sitemap.xml

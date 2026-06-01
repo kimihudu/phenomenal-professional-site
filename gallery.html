@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Phenomenal Tailoring &amp; Alteration</title>
+  <meta name="description" content="View our portfolio of expert alterations and tailoring work. Bridal, formal wear, dress alterations, and repairs by Phenomenal Tailoring in Georgetown, ON.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/og/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          fontSize: {
+            'fluid-hero': ['clamp(2rem, 8vw, 4.5rem)', { lineHeight: '1.1' }],
+            'fluid-h2':   ['clamp(1.5rem, 5vw, 3rem)',  { lineHeight: '1.2' }],
+          },
+          colors: {
+            brand: {
+              gold: '#fbbf24',
+              'gold-light': '#fcd34d',
+              'gold-dark': '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gallery — Phenomenal Tailoring &amp; Alteration">
+  <meta property="og:description" content="See our tailoring work — bridal, suits, dresses, and repairs. Georgetown, Ontario.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kimihudu.github.io/phenomenal-professional-site/gallery.html">
+  <meta property="og:image" content="https://kimihudu.github.io/phenomenal-professional-site/assets/images/og/og-cover.jpg">
+  <link rel="canonical" href="https://kimihudu.github.io/phenomenal-professional-site/gallery.html">
+  <style>
+    #menu-btn.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    #menu-btn.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    #menu-btn.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    [data-animate].animate-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-300 font-sans antialiased overflow-x-hidden">
+
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-gray-950/90 border-b border-gray-800">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16" aria-label="Main navigation">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 font-serif text-xl font-bold">
+        <span class="text-gray-50">Phenomenal</span>
+        <span class="text-amber-400">Tailoring</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Home</a>
+        <a href="services.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Services</a>
+        <a href="gallery.html" class="text-sm text-amber-400 hover:text-amber-400 transition-colors">Gallery</a>
+        <a href="about.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">About</a>
+        <a href="contact.html" class="text-sm text-gray-300 hover:text-amber-400 transition-colors">Contact</a>
+        <a href="contact.html" class="bg-amber-400 text-gray-900 text-sm font-semibold px-5 py-2 rounded-full hover:bg-amber-300 transition-colors">Book Now</a>
+      </div>
+
+      <!-- Hamburger button (mobile only) -->
+      <button id="menu-btn" class="md:hidden relative w-12 h-12 flex flex-col justify-center items-center gap-[5px]" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="w-6 h-0.5 bg-gray-300 transition-all duration-300 origin-center block"></span>
+        <span class="w-6 h-0.5 bg-gray-300 transition-all duration-300 block"></span>
+        <span class="w-6 h-0.5 bg-gray-300 transition-all duration-300 origin-center block"></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- Mobile full-screen overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 bg-gray-950/98 backdrop-blur-md flex flex-col items-center justify-center gap-8 hidden transition-opacity duration-300" aria-hidden="true">
+    <a href="index.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Home</a>
+    <a href="services.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Services</a>
+    <a href="gallery.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Gallery</a>
+    <a href="about.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">About</a>
+    <a href="contact.html" class="text-2xl font-serif text-gray-50 hover:text-amber-400 transition-colors mobile-nav-link">Contact</a>
+    <a href="contact.html" class="mt-4 bg-amber-400 text-gray-900 font-semibold text-xl px-10 py-4 rounded-full hover:bg-amber-300 transition-colors mobile-nav-link">Book Now</a>
+  </div>
+
+  <main>
+    <section class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400">PORTFOLIO</p>
+        <h1 data-animate="fadeInUp" class="mt-4 font-serif text-fluid-hero text-balance text-gray-50">Our Work</h1>
+        <p class="mt-6 max-w-xl mx-auto text-gray-400">A showcase of alterations and tailoring by Lisa. Every piece crafted with precision and care.</p>
+        <div class="mt-10 flex flex-wrap justify-center gap-3">
+          <button data-filter="all" class="filter-btn active cursor-pointer rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-gray-900 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">All</button>
+          <button data-filter="bridal" class="filter-btn cursor-pointer rounded-full border border-gray-700 bg-gray-900 px-5 py-2 text-sm text-gray-300 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">Bridal</button>
+          <button data-filter="suits" class="filter-btn cursor-pointer rounded-full border border-gray-700 bg-gray-900 px-5 py-2 text-sm text-gray-300 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">Suits</button>
+          <button data-filter="dresses" class="filter-btn cursor-pointer rounded-full border border-gray-700 bg-gray-900 px-5 py-2 text-sm text-gray-300 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">Dresses</button>
+          <button data-filter="repairs" class="filter-btn cursor-pointer rounded-full border border-gray-700 bg-gray-900 px-5 py-2 text-sm text-gray-300 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">Repairs</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-950 py-12">
+      <div data-animate="fadeInUp" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="bridal">
+            <div class="absolute inset-0 bg-gradient-to-br from-rose-900/40 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Bridal</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Wedding Gown Hem</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="bridal">
+            <div class="absolute inset-0 bg-gradient-to-br from-pink-900/30 to-gray-800"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Bridal</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Bridal Bustle</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="bridal">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-900/20 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Bridal</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Bridesmaid Fitting</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="suits">
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-700/40 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Suits</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Jacket Taper</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="suits">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/30 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Suits</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Trouser Hem</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="suits">
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Suits</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Formal Suit Resize</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="dresses">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/30 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Dresses</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Evening Gown</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="dresses">
+            <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/30 to-gray-800"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Dresses</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Summer Dress Hem</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="dresses">
+            <div class="absolute inset-0 bg-gradient-to-br from-violet-900/20 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Dresses</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Cocktail Dress</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="repairs">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-900/20 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Repairs</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Zipper Replacement</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="repairs">
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Repairs</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Seam Restoration</span>
+            </div>
+          </div>
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="repairs">
+            <div class="absolute inset-0 bg-gradient-to-br from-yellow-900/10 to-gray-900"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span class="text-xs uppercase tracking-widest text-amber-400">Repairs</span>
+              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Vintage Repair</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 rounded-2xl border border-dashed border-gray-700 bg-gray-900 px-8 py-12 text-center">
+          <p class="text-gray-400">Portfolio photos coming soon — visit us at 280 Guelph St, Georgetown to see our work in person.</p>
+          <a href="contact.html" class="mt-6 inline-flex rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-gray-900 transition-colors hover:bg-amber-300">Book a Fitting</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            // Update active button
+            filterBtns.forEach(function(b) {
+              b.classList.remove('bg-amber-400', 'text-gray-900', 'font-semibold');
+              b.classList.add('bg-gray-900', 'text-gray-300', 'border', 'border-gray-700');
+            });
+            this.classList.add('bg-amber-400', 'text-gray-900', 'font-semibold');
+            this.classList.remove('bg-gray-900', 'text-gray-300', 'border', 'border-gray-700');
+            
+            // Filter items
+            items.forEach(function(item) {
+              if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                item.style.display = '';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        });
+      })();
+    </script>
+  </main>
+
+  <footer class="bg-gray-900 border-t border-gray-800 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        <!-- Column 1: Brand -->
+        <div>
+          <a href="index.html" class="font-serif text-xl font-bold">
+            <span class="text-gray-50">Phenomenal</span>
+            <span class="text-amber-400"> Tailoring</span>
+          </a>
+          <p class="mt-3 text-gray-400 text-sm leading-relaxed">Precision alterations &amp; bespoke tailoring by artisan Lisa in Georgetown, Ontario.</p>
+          <div class="mt-4 flex items-center gap-4">
+            <!-- Facebook icon placeholder -->
+            <a href="#" class="text-gray-500 hover:text-amber-400 transition-colors" aria-label="Facebook">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <!-- Instagram icon placeholder -->
+            <a href="#" class="text-gray-500 hover:text-amber-400 transition-colors" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400 mb-5">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Home</a></li>
+            <li><a href="services.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Services</a></li>
+            <li><a href="gallery.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Gallery</a></li>
+            <li><a href="about.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">About</a></li>
+            <li><a href="contact.html" class="text-gray-400 text-sm hover:text-amber-400 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3: Contact -->
+        <div>
+          <h3 class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400 mb-5">Contact</h3>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-start gap-2">
+              <svg class="w-4 h-4 mt-0.5 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              280 Guelph St, Unit 19<br>Georgetown, ON L7G 4B1
+            </li>
+            <li>
+              <a href="tel:9058776747" class="hover:text-amber-400 transition-colors">905-877-6747</a>
+            </li>
+            <li>
+              <a href="tel:6475026193" class="hover:text-amber-400 transition-colors">647-502-6193 (Mobile)</a>
+            </li>
+            <li>
+              <a href="mailto:info@phenomenalalteration.com" class="hover:text-amber-400 transition-colors">info@phenomenalalteration.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Bottom bar -->
+      <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>&copy; 2024 Phenomenal Tailoring &amp; Alteration. All rights reserved.</p>
+        <p>Powered by craftsmanship &amp; precision. Georgetown, Ontario.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animate.js"></script>
+</body>
+</html>

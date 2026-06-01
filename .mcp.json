@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "open-design": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/kimiboo/Working/5s3s/AI-Happy/open-design/apps/daemon/dist/cli.js",
+        "mcp",
+        "--daemon-url",
+        "http://127.0.0.1:7456"
+      ],
+      "env": {
+        "OD_DATA_DIR": "/Users/kimiboo/Working/5s3s/AI-Happy/open-design/.od"
+      }
+    },
+    "ai-happy": {
+      "type": "stdio",
+      "command": "/Users/kimiboo/Working/5s3s/AI-Happy/ai_happy/tools/mcp/start-mcp-stdio.sh",
+      "args": [],
+      "env": {
+        "AI_HAPPY_CLIENT_ID": "phenomenal-professional-site",
+        "MCP_BUDGET_CLIENT_ID": "phenomenal-professional-site-session1",
+        "MCP_SESSION_MAX_WALL_MS": "7200000",
+        "OPENAI_BASE_URL": "https://inference.do-ai.run/v1"
+      }
+    },
+    "semble": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "semble[mcp]",
+        "semble"
+      ]
+    }
+  }
+}
