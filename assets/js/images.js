@@ -29,9 +29,9 @@ const MANIFEST = {
 
   /* ── Services page hero ──────────────────────────────────────────────── */
   'services-hero': {
-    id: 'photo-1558618666-fcd25c85cd64',
+    id: 'photo-1574180566232-aaad1b5b8450',
     w: 1600, h: 700,
-    alt: 'Tailor measuring fabric with a tape measure — professional alterations',
+    alt: 'Close-up of a vintage sewing machine in a professional tailor studio',
     credit: 'Unsplash',
   },
 
