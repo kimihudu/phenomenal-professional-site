@@ -42,6 +42,20 @@ const MANIFEST = {
     credit: 'Unsplash',
   },
 
+  'about-hero': {
+    id: 'photo-1537832816519-689ad163238b',
+    w: 1600, h: 700,
+    alt: 'Sewing workshop with fabric and tools — tailoring studio',
+    credit: 'Unsplash',
+  },
+
+  'contact-hero': {
+    id: 'photo-1507679799987-c73779587ccf',
+    w: 1600, h: 700,
+    alt: 'Professional fitting consultation — tailored suit',
+    credit: 'Unsplash',
+  },
+
   /* ── About page — Lisa portrait placeholder ──────────────────────────── */
   'about-portrait': {
     id: 'photo-1467043153537-a4fba2cd39ef',
