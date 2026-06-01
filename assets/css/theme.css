@@ -81,6 +81,11 @@ html { font-size: 17px; }
   .services-hero-heading   { color: #ffffff !important; }
   .services-hero-desc      { color: #ffffff !important; }
 
+  /* Gallery (Our Work) hero */
+  [data-stock-img="gallery-hero"] { opacity: 0.65 !important; }
+  .gallery-hero-heading { color: #ffffff !important; }
+  .gallery-hero-desc    { color: #ffffff !important; }
+
   /* Hero description: override near-white text-gray-400 back to readable dark */
   .hero-desc { color: #eeeeee !important; }
 

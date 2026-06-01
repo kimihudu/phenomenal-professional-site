@@ -35,6 +35,13 @@ const MANIFEST = {
     credit: 'Unsplash',
   },
 
+  'gallery-hero': {
+    id: 'photo-1558769132-cb1aea458c5e',
+    w: 1600, h: 700,
+    alt: 'Tailor\'s workshop — thread, fabric and craftsmanship',
+    credit: 'Unsplash',
+  },
+
   /* ── About page — Lisa portrait placeholder ──────────────────────────── */
   'about-portrait': {
     id: 'photo-1467043153537-a4fba2cd39ef',

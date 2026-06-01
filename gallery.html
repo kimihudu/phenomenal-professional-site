@@ -123,11 +123,14 @@
   </div>
 
   <main>
-    <section class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 py-24">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section class="gallery-hero-section relative overflow-hidden bg-gray-950 py-24 md:py-32">
+      <div data-stock-img="gallery-hero" class="absolute inset-0"></div>
+      <div class="gallery-hero-overlay absolute inset-0 bg-black/55"></div>
+      <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/80 to-transparent"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="text-xs font-sans font-semibold uppercase tracking-widest text-amber-400">PORTFOLIO</p>
-        <h1 data-animate="fadeInUp" class="mt-4 font-serif text-fluid-hero text-balance text-gray-50">Our Work</h1>
-        <p class="mt-6 max-w-xl mx-auto text-gray-400">A showcase of alterations and tailoring by Lisa. Every piece crafted with precision and care.</p>
+        <h1 data-animate="fadeInUp" class="gallery-hero-heading mt-4 font-serif text-fluid-hero text-balance text-gray-50">Our Work</h1>
+        <p class="gallery-hero-desc mt-6 max-w-xl mx-auto text-gray-400">A showcase of alterations and tailoring by Lisa. Every piece crafted with precision and care.</p>
         <div class="mt-10 flex flex-wrap justify-center gap-3">
           <button data-filter="all" class="filter-btn active cursor-pointer rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-gray-900 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">All</button>
           <button data-filter="bridal" class="filter-btn cursor-pointer rounded-full border border-gray-700 bg-gray-900 px-5 py-2 text-sm text-gray-300 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">Bridal</button>
