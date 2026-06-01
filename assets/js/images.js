@@ -64,12 +64,6 @@ const MANIFEST = {
     alt: 'Lisa, lead artisan at Phenomenal Tailoring & Alteration',
     credit: 'Unsplash',
   },
-  'about-story': {
-    id: 'photo-1441986300917-64674bd600d8',
-    w: 800, h: 600,
-    alt: 'Tailor measuring fabric on a worktable',
-    credit: 'Annie Spratt on Unsplash',
-  },
 
   /* ── Gallery — Bridal ────────────────────────────────────────────────── */
   'gallery-bridal-1': {
