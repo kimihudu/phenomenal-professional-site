@@ -58,8 +58,9 @@ const MANIFEST = {
 
   /* ── About page — Lisa portrait placeholder ──────────────────────────── */
   'about-portrait': {
-    id: 'photo-1639380747026-1b77d233f635',
-    w: 776, h: 970,
+    base: 'https://plus.unsplash.com/',
+    id: 'premium_photo-1683133809575-4a80754b82ee',
+    w: 774, h: 968,
     alt: 'Lisa, lead artisan at Phenomenal Tailoring & Alteration',
     credit: 'Unsplash',
   },
@@ -174,7 +175,8 @@ const MANIFEST = {
 /* ─── Loader ────────────────────────────────────────────────────────────── */
 
 function buildUrl(item) {
-  return `${BASE}${item.id}?w=${item.w}&h=${item.h}${PARAMS}`;
+  const base = item.base || BASE;
+  return `${base}${item.id}?w=${item.w}&h=${item.h}${PARAMS}`;
 }
 
 function applyToImg(el, item) {
