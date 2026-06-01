@@ -76,15 +76,11 @@ html { font-size: 17px; }
   /* Hero stock image: reduce to near-invisible in light mode so cream bg shows cleanly */
   [data-stock-img="hero-bg"]       { opacity: 0.05 !important; }
 
-  /* Services hero: image shows at 30% — visible but softened behind cream wash */
-  [data-stock-img="services-hero"] { opacity: 0.30 !important; }
-  /* Swap dark overlay → cream wash so image shows through and dark text stays readable */
-  .services-hero-overlay   { background-color: rgba(250, 249, 246, 0.60) !important; }
-  /* Bottom vignette blends to cream page background */
-  .services-hero-vignette  { background: linear-gradient(to top, #faf9f6, transparent) !important; }
-  /* Force hero heading/desc text to deep warm-dark so it reads on cream wash */
-  .services-hero-heading   { color: #1c1917 !important; }
-  .services-hero-desc      { color: #44403c !important; }
+  /* Services hero: image shows at 65% — same feel as dark theme, overlay handles contrast */
+  [data-stock-img="services-hero"] { opacity: 0.65 !important; }
+  /* Keep dark overlay (bg-black/55 is not overridden — stays dark). Force text white. */
+  .services-hero-heading   { color: #ffffff !important; }
+  .services-hero-desc      { color: rgba(255,255,255,0.82) !important; }
 
   /* Hero amber glow: mute in light mode — looks odd over cream */
   .hero-glow { opacity: 0.3 !important; }
