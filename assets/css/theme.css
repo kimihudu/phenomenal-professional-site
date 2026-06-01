@@ -90,3 +90,26 @@ html { font-size: 17px; }
   /* Hamburger bars */
   #menu-btn span { background-color: #1c1917 !important; }
 }
+
+/* ============================================
+   Gallery card captions — theme-safe
+   These use explicit colors so light/dark theme
+   both work: the bottom gradient is always dark,
+   so white text is always readable on the image.
+   ============================================ */
+.gallery-caption-label {
+  color: #fbbf24;       /* amber — visible on dark strip */
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.gallery-caption-title {
+  color: #ffffff;       /* white — always readable on dark strip */
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+/* Light theme: same values — overlay is always dark, text stays white */
+[data-theme="light"] .gallery-caption-label { color: #fbbf24 !important; }
+[data-theme="light"] .gallery-caption-title  { color: #ffffff !important; }

@@ -134,6 +134,7 @@
           <button data-filter="suits" class="filter-btn cursor-pointer rounded-full border border-gray-700 bg-gray-900 px-5 py-2 text-sm text-gray-300 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">Suits</button>
           <button data-filter="dresses" class="filter-btn cursor-pointer rounded-full border border-gray-700 bg-gray-900 px-5 py-2 text-sm text-gray-300 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">Dresses</button>
           <button data-filter="repairs" class="filter-btn cursor-pointer rounded-full border border-gray-700 bg-gray-900 px-5 py-2 text-sm text-gray-300 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">Repairs</button>
+          <button data-filter="custom" class="filter-btn cursor-pointer rounded-full border border-gray-700 bg-gray-900 px-5 py-2 text-sm text-gray-300 transition-all hover:border-amber-400 hover:text-amber-400 [touch-action:manipulation]">Custom</button>
         </div>
       </div>
     </section>
@@ -141,90 +142,132 @@
     <section class="bg-gray-950 py-12">
       <div data-animate="fadeInUp" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="bridal" data-stock-img="gallery-bridal-1">
-            <div class="absolute inset-0 bg-gradient-to-br from-rose-900/40 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Bridal</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Wedding Gown Hem</span>
+
+          <!-- ── Bridal ── -->
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="bridal">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-bridal-1"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Bridal</span>
+              <span class="gallery-caption-title block mt-0.5">Wedding Gown Hem</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="bridal" data-stock-img="gallery-bridal-2">
-            <div class="absolute inset-0 bg-gradient-to-br from-pink-900/30 to-gray-800"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Bridal</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Bridal Bustle</span>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="bridal">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-bridal-2"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Bridal</span>
+              <span class="gallery-caption-title block mt-0.5">Bridal Bustle</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="bridal" data-stock-img="gallery-bridal-3">
-            <div class="absolute inset-0 bg-gradient-to-br from-amber-900/20 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Bridal</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Bridesmaid Fitting</span>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="bridal">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-bridal-3"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Bridal</span>
+              <span class="gallery-caption-title block mt-0.5">Bridesmaid Fitting</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="suits" data-stock-img="gallery-suits-1">
-            <div class="absolute inset-0 bg-gradient-to-br from-slate-700/40 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Suits</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Jacket Taper</span>
+
+          <!-- ── Suits ── -->
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="suits">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-suits-1"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Suits</span>
+              <span class="gallery-caption-title block mt-0.5">Jacket Taper</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="suits" data-stock-img="gallery-suits-2">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/30 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Suits</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Trouser Hem</span>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="suits">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-suits-2"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Suits</span>
+              <span class="gallery-caption-title block mt-0.5">Trouser Hem</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="suits" data-stock-img="gallery-suits-3">
-            <div class="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Suits</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Formal Suit Resize</span>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="suits">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-suits-3"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Suits</span>
+              <span class="gallery-caption-title block mt-0.5">Formal Suit Resize</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="dresses" data-stock-img="gallery-dresses-1">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/30 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Dresses</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Evening Gown</span>
+
+          <!-- ── Dresses ── -->
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="dresses">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-dresses-1"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Dresses</span>
+              <span class="gallery-caption-title block mt-0.5">Evening Gown</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="dresses" data-stock-img="gallery-dresses-2">
-            <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/30 to-gray-800"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Dresses</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Summer Dress Hem</span>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="dresses">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-dresses-2"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Dresses</span>
+              <span class="gallery-caption-title block mt-0.5">Summer Dress Hem</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="dresses" data-stock-img="gallery-dresses-3">
-            <div class="absolute inset-0 bg-gradient-to-br from-violet-900/20 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Dresses</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Cocktail Dress</span>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="dresses">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-dresses-3"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Dresses</span>
+              <span class="gallery-caption-title block mt-0.5">Cocktail Dress</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="repairs" data-stock-img="gallery-repairs-1">
-            <div class="absolute inset-0 bg-gradient-to-br from-amber-900/20 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Repairs</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Zipper Replacement</span>
+
+          <!-- ── Repairs ── -->
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="repairs">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-repairs-1"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Repairs</span>
+              <span class="gallery-caption-title block mt-0.5">Zipper Replacement</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="repairs" data-stock-img="gallery-repairs-2">
-            <div class="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Repairs</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Seam Restoration</span>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="repairs">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-repairs-2"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Repairs</span>
+              <span class="gallery-caption-title block mt-0.5">Seam Restoration</span>
             </div>
           </div>
-          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="repairs" data-stock-img="gallery-repairs-3">
-            <div class="absolute inset-0 bg-gradient-to-br from-yellow-900/10 to-gray-900"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-950/80 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span class="text-xs uppercase tracking-widest text-amber-400">Repairs</span>
-              <span class="mt-1 text-center font-serif text-lg text-balance text-gray-50">Vintage Repair</span>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="repairs">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-repairs-3"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Repairs</span>
+              <span class="gallery-caption-title block mt-0.5">Vintage Repair</span>
             </div>
           </div>
+
+          <!-- ── Custom & Bespoke ── -->
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="custom">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-custom-1"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Custom</span>
+              <span class="gallery-caption-title block mt-0.5">Made-to-Measure</span>
+            </div>
+          </div>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="custom">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-custom-2"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Custom</span>
+              <span class="gallery-caption-title block mt-0.5">Fabric Selection</span>
+            </div>
+          </div>
+
+          <div class="gallery-item group relative aspect-square cursor-pointer overflow-hidden rounded-xl [touch-action:manipulation]" data-category="custom">
+            <div class="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-105" data-stock-img="gallery-custom-3"></div>
+            <div class="gallery-caption absolute bottom-0 left-0 right-0 p-3" style="background:linear-gradient(to top,rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%)">
+              <span class="gallery-caption-label block">Custom</span>
+              <span class="gallery-caption-title block mt-0.5">Bespoke Fitting</span>
+            </div>
+          </div>
+
         </div>
 
         <div class="mt-8 rounded-2xl border border-dashed border-gray-700 bg-gray-900 px-8 py-12 text-center">

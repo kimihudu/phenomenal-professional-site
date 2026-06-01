@@ -101,6 +101,26 @@ const MANIFEST = {
     credit: 'Hannah Morgan on Unsplash',
   },
 
+  /* ── Gallery — Custom & Bespoke ─────────────────────────────────────── */
+  'gallery-custom-1': {
+    id: 'photo-1541961017774-22349e4a1262',
+    w: 600, h: 600,
+    alt: 'Fabric selection and custom garment measuring',
+    credit: 'Unsplash',
+  },
+  'gallery-custom-2': {
+    id: 'photo-1434389677669-e08b4cac3105',
+    w: 600, h: 600,
+    alt: 'Bespoke tailoring — fabric and pattern layout',
+    credit: 'Unsplash',
+  },
+  'gallery-custom-3': {
+    id: 'photo-1503341338985-c0477be52513',
+    w: 600, h: 600,
+    alt: 'Tailor taking measurements for a custom-made garment',
+    credit: 'Unsplash',
+  },
+
   /* ── Gallery — Repairs ───────────────────────────────────────────────── */
   'gallery-repairs-1': {
     id: 'photo-1545291730-faff8ca1d4b0',
