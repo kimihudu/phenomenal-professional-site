@@ -27,6 +27,14 @@ const MANIFEST = {
     credit: 'Unsplash',
   },
 
+  /* ── Services page hero ──────────────────────────────────────────────── */
+  'services-hero': {
+    id: 'photo-1558618666-fcd25c85cd64',
+    w: 1600, h: 700,
+    alt: 'Tailor measuring fabric with a tape measure — professional alterations',
+    credit: 'Unsplash',
+  },
+
   /* ── About page — Lisa portrait placeholder ──────────────────────────── */
   'about-portrait': {
     id: 'photo-1467043153537-a4fba2cd39ef',

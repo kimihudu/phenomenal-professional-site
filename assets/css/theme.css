@@ -74,7 +74,8 @@ html { font-size: 17px; }
   .to-black      { --tw-gradient-to: #faf9f6 var(--tw-gradient-to-position) !important; }
 
   /* Hero stock image: reduce to near-invisible in light mode so cream bg shows cleanly */
-  [data-stock-img="hero-bg"] { opacity: 0.05 !important; }
+  [data-stock-img="hero-bg"]       { opacity: 0.05 !important; }
+  [data-stock-img="services-hero"] { opacity: 0.08 !important; }
 
   /* Hero amber glow: mute in light mode — looks odd over cream */
   .hero-glow { opacity: 0.3 !important; }
