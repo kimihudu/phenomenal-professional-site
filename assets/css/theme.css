@@ -61,6 +61,7 @@ html { font-size: 17px; }
   .bg-amber-400\/20  { background-color: rgba(180, 83, 9, 0.12) !important; }
   .border-amber-400\/30 { border-color: rgba(180, 83, 9, 0.25) !important; }
   .border-amber-400\/40 { border-color: rgba(180, 83, 9, 0.30) !important; }
+  .border-amber-400\/60 { border-color: rgba(180, 83, 9, 0.50) !important; }
   .focus\:ring-amber-400\/30:focus { --tw-ring-color: rgba(180, 83, 9, 0.20) !important; }
   .focus\:border-amber-400:focus   { border-color: #b45309 !important; }
 
@@ -70,6 +71,13 @@ html { font-size: 17px; }
   .to-gray-950   { --tw-gradient-to: #faf9f6 var(--tw-gradient-to-position) !important; }
   .from-gray-900 { --tw-gradient-from: #ffffff var(--tw-gradient-from-position) !important; }
   .to-gray-800   { --tw-gradient-to: #f5f0e8 var(--tw-gradient-to-position) !important; }
+  .to-black      { --tw-gradient-to: #faf9f6 var(--tw-gradient-to-position) !important; }
+
+  /* Hero stock image: reduce to near-invisible in light mode so cream bg shows cleanly */
+  [data-stock-img="hero-bg"] { opacity: 0.05 !important; }
+
+  /* Hero amber glow: mute in light mode — looks odd over cream */
+  .hero-glow { opacity: 0.3 !important; }
 
   /* Nav backdrop / overlay */
   .bg-gray-950\/90 { background-color: rgba(250, 249, 246, 0.92) !important; }
