@@ -84,17 +84,14 @@ html { font-size: 17px; }
   /* Gallery (Our Work) hero */
   [data-stock-img="gallery-hero"] { opacity: 0.65 !important; }
   .gallery-hero-heading { color: #ffffff !important; }
-  .gallery-hero-desc    { color: #ffffff !important; }
 
   /* About hero */
   [data-stock-img="about-hero"] { opacity: 0.65 !important; }
   .about-hero-heading { color: #ffffff !important; }
-  .about-hero-desc    { color: #ffffff !important; }
 
   /* Contact hero */
   [data-stock-img="contact-hero"] { opacity: 0.65 !important; }
   .contact-hero-heading { color: #ffffff !important; }
-  .contact-hero-desc    { color: #ffffff !important; }
 
   /* Hero description: override near-white text-gray-400 back to readable dark */
   .hero-desc { color: #eeeeee !important; }
